@@ -20,7 +20,8 @@ cd out
 git init -q -b gh-pages
 git add -A
 git commit -q -m "Déploiement du site sur GitHub Pages"
-git push -q -f "$REMOTE" gh-pages
+# Tampon élargi : les photos et vidéos dépassent la limite HTTPS par défaut.
+git -c http.postBuffer=524288000 push -q -f "$REMOTE" gh-pages
 rm -rf .git
 
 echo "Publié : ${NEXT_PUBLIC_SITE_URL}/"
