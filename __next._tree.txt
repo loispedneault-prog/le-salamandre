@@ -1,0 +1,10 @@
+:HL["/le-salamandre/_next/static/chunks/3k7wgef5fh9m8.css","style"]
+:HL["/le-salamandre/_next/static/media/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/0926c12c4384550f-s.p.1-qpv3jvnkkyl.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/1f9e983605289f29-s.p.3aak_kra40y8r.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/8bd76523131fa0fc-s.p.1pvupmngxrt5z.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/acf349172f10b359-s.p.0gv8q2vqi14yg.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/b2ea385cb5ae8625-s.p.1spbknb88wd48.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/le-salamandre/_next/static/media/d0b60be57f16ee32-s.p.1xtu7gopqv2u0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4224,"slots":null}}},"staleTime":300,"buildId":"EGFNKacD6JrHuVsl6bZyT"}

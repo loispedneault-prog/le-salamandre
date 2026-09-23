@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+2:I[97367,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[97367,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"ViewportBoundary"]
+8:I[97367,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"MetadataBoundary"]
+6:X
+15:X
+15:C
+0:{"buildId":"EGFNKacD6JrHuVsl6bZyT","data":[{"rsc":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#061a18"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Le Salamandre | Restaurant fusion algéro-vietnamienne à Montréal"}],["$","meta","1",{"name":"description","content":"Première table fusion algérienne et vietnamienne à Montréal. Cuisine fraîche, saine et généreuse, pensée pour le partage, au 65 avenue Duluth Est, Plateau-Mont-Royal. Ouvert tous les jours de 17 h à 1 h."}],["$","meta","2",{"name":"application-name","content":"Le Salamandre"}],["$","meta","3",{"name":"keywords","content":"restaurant algérien Montréal,restaurant vietnamien Montréal,fusion algéro-vietnamienne,Plateau-Mont-Royal,avenue Duluth,tajine zitoune,iftar Montréal"}],["$","link","4",{"rel":"canonical","href":"https://loispedneault-prog.github.io/le-salamandre/"}],["$","meta","5",{"property":"og:title","content":"Le Salamandre | Restaurant fusion algéro-vietnamienne à Montréal"}],["$","meta","6",{"property":"og:description","content":"Première table fusion algérienne et vietnamienne à Montréal. Cuisine fraîche, saine et généreuse, pensée pour le partage, au 65 avenue Duluth Est, Plateau-Mont-Royal. Ouvert tous les jours de 17 h à 1 h."}],["$","meta","7",{"property":"og:url","content":"https://loispedneault-prog.github.io/le-salamandre/"}],["$","meta","8",{"property":"og:site_name","content":"Le Salamandre"}],["$","meta","9",{"property":"og:locale","content":"fr_CA"}],["$","meta","10",{"property":"og:image","content":"https://loispedneault-prog.github.io/le-salamandre/opengraph-image.jpg?opengraph-image.2tq1xf_zolffs.jpg"}],["$","meta","11",{"property":"og:image:type","content":"image/jpeg"}],["$","meta","12",{"property":"og:image:width","content":"1200"}],["$","meta","13",{"property":"og:image:height","content":"630"}],["$","meta","14",{"property":"og:image:alt","content":"Le Salamandre, fusion algérienne et vietnamienne à Montréal : un tajine fumant sous des lampes ambrées"}],["$","meta","15",{"property":"og:type","content":"website"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"Le Salamandre | Restaurant fusion algéro-vietnamienne à Montréal"}],["$","meta","18",{"name":"twitter:description","content":"Première table fusion algérienne et vietnamienne à Montréal. Cuisine fraîche, saine et généreuse, pensée pour le partage, au 65 avenue Duluth Est, Plateau-Mont-Royal. Ouvert tous les jours de 17 h à 1 h."}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10"]}]}]}],"$L11"]}],"isPartial":"$@12","staleTime":"$6","varyParams":null},{"rsc":"$L13","isPartial":"$@14","staleTime":"$6","varyParams":"$15"}],"isUpgradeableISRFallback":false,"a":"$@16","rootVaryParams":null,"needsRuntimeRequest":"$@17"}
+18:I[27201,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"IconMark"]
+19:I[39756,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"default"]
+1a:I[37457,["/le-salamandre/_next/static/chunks/0h2qsuyze9ds1.js"],"default"]
+4:null
+9:["$","meta","19",{"name":"twitter:image","content":"https://loispedneault-prog.github.io/le-salamandre/twitter-image.jpg?twitter-image.2tq1xf_zolffs.jpg"}]
+a:["$","meta","20",{"name":"twitter:image:alt","content":"Le Salamandre, fusion algérienne et vietnamienne à Montréal : un tajine fumant sous des lampes ambrées"}]
+b:["$","meta","21",{"name":"twitter:image:type","content":"image/jpeg"}]
+c:["$","meta","22",{"name":"twitter:image:width","content":"1200"}]
+d:["$","meta","23",{"name":"twitter:image:height","content":"630"}]
+e:["$","link","24",{"rel":"icon","href":"/le-salamandre/icon.png?icon.2tvg34h94y2ug.png","sizes":"192x192","type":"image/png"}]
+f:["$","link","25",{"rel":"apple-touch-icon","href":"/le-salamandre/apple-icon.png?apple-icon.2_yqpct_m3tmq.png","sizes":"180x180","type":"image/png"}]
+10:["$","$L18","26",{}]
+11:["$","meta",null,{"name":"next-size-adjust","content":""}]
+13:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+17:true
+6:300
+6:C
+16:0
+12:"$undefined"
+14:"$undefined"
+5:"$undefined"
