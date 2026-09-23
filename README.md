@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Le Salamandre
 
-## Getting Started
+Site one-page du restaurant Le Salamandre, fusion algérienne × vietnamienne, 65 avenue Duluth Est, Montréal.
 
-First, run the development server:
+Stack : Next.js 16 (App Router), Tailwind CSS v4, Motion (ex-Framer Motion), Phosphor Icons.
+
+## Lancer le site
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site est exporté en statique (`npm run build` produit le dossier `out/`), il n'a besoin d'aucun serveur.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Publication (GitHub Pages)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run deploy
+```
 
-## Learn More
+Le script compile le site avec le sous-chemin `/le-salamandre` et le publie sur la branche `gh-pages`. Il faut être connecté avec `gh auth login`.
 
-To learn more about Next.js, take a look at the following resources:
+## Où modifier quoi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Élément | Fichier |
+| --- | --- |
+| Textes, menu, prix, horaires, téléphones, avis, galerie | `lib/site.ts` |
+| Couleurs et polices (charte) | `app/globals.css`, `app/layout.tsx` |
+| SEO, Open Graph, données structurées | `app/layout.tsx`, `app/opengraph-image.jpg` |
+| Sections | `components/*.tsx` |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Remplacer les visuels provisoires
 
-## Deploy on Vercel
+Les photos et la vidéo actuelles sont générées par IA d'après les photos Instagram du restaurant. Remplacez les fichiers en gardant les mêmes noms :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Vidéo du hero : `public/video/hero-720.mp4` (desktop) et `public/video/hero-540.mp4` (mobile), image de secours `public/images/hero.jpg`
+- Plats : `public/images/menu/*.jpg` (format portrait 4:5 conseillé)
+- Histoire : `public/images/story/alger.jpg`, `saigon.jpg`
+- Galerie : `public/images/gallery/*.jpg` (mettre à jour `w`/`h` dans `lib/site.ts` si le format change)
+- Logo : `public/brand/emblem.png`, `emblem-lg.jpg` (recadrés depuis la photo de profil Instagram, idéalement à remplacer par le fichier vectoriel original)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Après tout remplacement de photo JPG, régénérez les variantes WebP servies au navigateur :
+
+```bash
+npm run images
+```

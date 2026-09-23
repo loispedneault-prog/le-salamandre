@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+  Charte Le Salamandre, tirée du compte Instagram @salamandre_restaurant :
+  - nuit : le vert profond du fond du logo (#061A18)
+  - ambre : la lueur des lampes Tiffany et la flamme du lotus
+  - crème : le lettrage du logo
+  Thème sombre unique, assumé : restaurant du soir (17 h à 1 h), identité nocturne.
+*/
+@theme {
+  --color-nuit-950: #030d0b;
+  --color-nuit-900: #061a18;
+  --color-nuit-850: #09211e;
+  --color-nuit-800: #0d2a26;
+  --color-nuit-700: #143631;
+  --color-nuit-600: #1e453e;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-creme: #f2e8d5;
+  --color-creme-muted: #b8b2a2;
+  --color-creme-faint: #8a8779;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-ambre: #e9a43f;
+  --color-ambre-soft: #f4c77e;
+  --color-ambre-deep: #b8742a;
+
+  --color-herbe: #8db27a;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-marquee: marquee 52s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme inline {
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-outfit);
+  --font-arabic: var(--font-reem);
+}
+
+/* Échelle de z-index : header 40, menu mobile 50, lightbox 60, grain 70. */
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-nuit-900);
+    color: var(--color-creme);
+    font-family: var(--font-sans);
+    font-variant-numeric: lining-nums;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-ambre);
+    color: var(--color-nuit-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ambre);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  /* Arche mauresque pour les cadres photo de l'histoire */
+  .arch {
+    border-radius: 999px 999px 28px 28px;
+  }
+}
+
+/* Grain photographique fixe (jamais sur un conteneur qui défile) */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  opacity: 0.08;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.95  0 0 0 0 0.85  0 0 0 0.9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+}
+
+/* Carte sombre : l'iframe Google Maps est inversée pour s'accorder au thème */
+.map-dark {
+  filter: invert(0.9) hue-rotate(165deg) saturate(0.5) brightness(0.95) contrast(0.92);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Effets liés au défilement : figés dans leur état final */
+  [data-parallax] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
